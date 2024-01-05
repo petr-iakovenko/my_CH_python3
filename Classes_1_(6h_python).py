@@ -13,5 +13,5 @@ class MyClass:
 
 
 my_class = MyClass()
-print(type(MyClass))   # <class 'type'> - класс
-print(type(my_class))  # <class '__main__.MyClass'> - экземпляр класса
+print(type(MyClass))   # run: <class 'type'> - класс
+print(type(my_class))  # run: <class '__main__.MyClass'> - экземпляр класса
