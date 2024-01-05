@@ -8,7 +8,6 @@
 
 class Character:
     """Базовый класс"""
-
     def __init__(self, *, level: int) -> None:
         self.level = level
         self.health_points = self.base_health_points * level
