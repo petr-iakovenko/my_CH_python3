@@ -25,7 +25,7 @@ def say_hello():
 my_decorator(say_hello)()   # запуск в "лоб"
 
 
-@my_decorator               # обработка функции декоратором
+@my_decorator               # оборачивание функции декоратором
 def say_hello():
     print("Hello!")
 
