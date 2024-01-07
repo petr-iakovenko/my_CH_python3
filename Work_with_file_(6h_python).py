@@ -2,6 +2,7 @@
 Работа с файлами
 
 Разберем примеры работы с файлами json, csv
+Менеджер контекста with
 """
 import json
 import csv
@@ -54,3 +55,11 @@ fields = ['name', 'age', 'occupation']
 csv_dict_writer = csv.DictWriter(file, fieldnames=fields)
 csv_dict_writer.writerows(persons)
 file.close()
+
+
+""" МЕНЕДЖЕР КОНТЕКСТА """
+
+with open("files/persons.csv", "w") as file:
+    csv_dict_rider = csv.DictReader(file)
+    for row in csv_dict_rider:
+        print(row["name"], row["age"], row["occupation"])
